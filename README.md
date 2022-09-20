@@ -1,7 +1,5 @@
 # The game rules
 
-## Warning:
-
 While the name and gameplay of QNO resemble that of the popular card game UNO, there are a lot of key differences between the two games. The QNO game will walk you through what your options are on each turn, but it is still a good idea for everyone to thoroughly read through the rules before playing for the first time.
 
 ## Setup
