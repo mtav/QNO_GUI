@@ -61,7 +61,8 @@
 		"play_direction": {
 			"position": [56, 471],
 			"offset": [30, 0],
-			"size": [163, 161]
+			"size": [163, 161],
+			"img_path": "img/playDirection.png"
 		},
 		"option_music_paused": {
 			"button": [56, 782, 50, 25],
@@ -140,5 +141,10 @@
 		"spiral_radius": 50,
 		"revolutions": 2,
 		"is_clockwise": true
+	},
+	"sound": {
+		"lose_sound": "sound/game_over_bad_chest.wav",
+		"win_sound": "sound/winfretless.ogg",
+		"background_music": "sound/TremLoadingloopl.wav"
 	}
 }

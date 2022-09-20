@@ -64,6 +64,10 @@ def get_img_full_path(path):
 class PlayDirectionImage(card_holder.CardsHolder):
     playDirection = 0
 
+    def setupImage(self, img_path):
+        img = pygame.image.load(img_path)
+        self.img_scaled = pygame.transform.scale(img, (163, 161))
+
     def toggleDirection(self):
         print('REVERSING!!!')
         self.playDirection = (self.playDirection+1)%2
@@ -77,10 +81,9 @@ class PlayDirectionImage(card_holder.CardsHolder):
         return False
     def render(self, screen):
         # draw_empty_card_pocket(self, screen, 163, 161)
-        img = pygame.image.load('../../img/playDirection.png')
-        img_scaled = pygame.transform.scale(img, (163, 161))
+        img_scaled = self.img_scaled
         if self.playDirection==1:
-            img_scaled = pygame.transform.flip(img_scaled, False, True)
+            img_scaled = pygame.transform.flip(self.img_scaled, False, True)
         screen.blit(img_scaled, (self.pos[0], self.pos[1]))
 def draw_empty_card_pocket(holder, screen, width=None, height=None):
     """ Renders empty card pocket at the position of CardHolder object
@@ -286,6 +289,7 @@ class Crazy8sController(controller.Controller):
         pos = self.settings_json["gui"]["play_direction"]["position"]
         offset = self.settings_json["gui"]["play_direction"]["offset"]
         self.play_direction_image = PlayDirectionImage(pos, offset, enums.GrabPolicy.no_grab)
+        self.play_direction_image.setupImage(self.settings_json["gui"]["play_direction"]["img_path"])
         self.add_rendered_object(self.play_direction_image)
 
         # Other global behavior
@@ -311,9 +315,9 @@ class Crazy8sController(controller.Controller):
         #                                self.testSomething, "testSomething")
 
         # load music and sounds
-        pygame.mixer.music.load('../../sound/TremLoadingloopl.wav')
-        self.win_sound = pygame.mixer.Sound('../../sound/winfretless.ogg')
-        self.lose_sound = pygame.mixer.Sound('../../sound/game_over_bad_chest.wav')
+        pygame.mixer.music.load(self.settings_json["sound"]["background_music"])
+        self.win_sound = pygame.mixer.Sound(self.settings_json["sound"]["win_sound"])
+        self.lose_sound = pygame.mixer.Sound(self.settings_json["sound"]["lose_sound"])
 
         # add music button
         # self.music_paused = False
