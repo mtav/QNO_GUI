@@ -1,7 +1,7 @@
 {
 	"window": {
 		"size": [1540, 960],
-		"title": "Quantum card game prototype",
+		"title": "QNO",
 		"background_color": [25, 217, 255]
 	},
 	"card": {
