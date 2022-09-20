@@ -68,8 +68,8 @@ This game is a graphical implementation of this game:
 * https://github.com/Q-Philia/QNO/
 
 It uses a modified version of this pygame_cards engine:
-* http://www.pygame.org/project-pygame_cards-3008-.html
 * https://github.com/ZBlocker655/pygame_cards
+* Which is itself forked from: http://www.pygame.org/project-pygame_cards-3008-.html
 
 ## Art
 * Music:
