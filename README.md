@@ -6,6 +6,20 @@ It was created for the [Quantum Game Jam 2022](https://itch.io/jam/quantum-game-
 
 See also the related [itch.io page](https://quantummike.itch.io/quantumcardgameprototype).
 
+# Installation
+
+The game uses Python 3.
+
+Install the required packages with:
+```
+pip install -r requirements.txt
+```
+
+Then run the game with:
+```
+python ./QNO_GUI.py
+```
+
 # The game rules
 
 While the name and gameplay of QNO resemble that of the popular card game UNO, there are a lot of key differences between the two games. The QNO game will walk you through what your options are on each turn, but it is still a good idea for everyone to thoroughly read through the rules before playing for the first time.
