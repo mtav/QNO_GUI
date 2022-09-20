@@ -5,6 +5,13 @@ import subprocess
 import QNO
 from QNO import color
 
+def removeBraKets(s):
+  states=["|00>","|01>","|10>","|11>"]
+  if s in states:
+    return s[1:3]
+  else:
+    return s
+
 def main():
     deck = QNO.buildDeck()
 
@@ -14,7 +21,7 @@ def main():
     for card in deck:
         print(card)
         txt = f'{card[1]}\\n{card[0]}'
-        outfile = f'card_{card[1]}_{card[0]}.png'
+        outfile = f'card_{card[1]}_{removeBraKets(card[0])}.png'
         outfile = os.path.join(IMGDIR, 'out', outfile)
         if card[0]=="|00>":
             infile = os.path.join(IMGDIR, 'blank_red.png')

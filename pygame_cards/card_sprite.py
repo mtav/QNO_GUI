@@ -11,6 +11,12 @@ except ImportError as err:
     print("Fail loading a module in file:", __file__, "\n", err)
     sys.exit(2)
 
+def removeBraKets(s):
+  states=["|00>","|01>","|10>","|11>"]
+  if s in states:
+    return s[1:3]
+  else:
+    return s
 
 def get_img_full_path(path):
     """ Checks if file can be found by path specified in the input. Returns the same as input
@@ -117,5 +123,6 @@ class CardSprite(AbstractPygameCardSprite):
     @staticmethod
     def get_image_path(suit, rank):
         path = CardSprite.card_json["front_sprite_path"]
-        path += f'card_{rank}_{suit}.png'
+        # ~ path += f'card_{rank}_{suit}.png'
+        path += f'card_{rank}_{removeBraKets(suit)}.png'
         return path

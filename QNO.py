@@ -22,7 +22,7 @@ def buildDeck():
     values=[0,1,2,3,4,5,6,7,8,9, "Draw Two", "Skip", "Reverse"]
     gateState=["Gate"]
     gateVal=["H","X", "CNOT"]
-    gateVal = ["H"]*10
+    # ~ gateVal = ["H"]
 
     for state in states:
         for value in values:
