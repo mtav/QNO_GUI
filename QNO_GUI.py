@@ -1552,6 +1552,7 @@ class Crazy8sController(controller.Controller):
 
         # display message
         self.show_status_notification(f"GAME OVER! {message}", color=(255, 100, 100), message_json=self.settings_json["gui"]["message_game_over"])
+        print(message)
 
     def start_game_over_bgcolor_pulse_animation(self):
         """Start pulsing the background for game over."""
