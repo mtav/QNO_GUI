@@ -26,7 +26,7 @@ While the name and gameplay of QNO resemble that of the popular card game UNO, t
 
 ## Setup
 
-The game is for 2-4 players. Each player starts with five cards. The rest of the cards are placed in a Draw Pile. The top card of the Draw Pile is automatically placed in the Discard Pile, and then the game begins!
+The game is for 2-7 players. Each player starts with five cards. The rest of the cards are placed in a Draw Pile. The top card of the Draw Pile is automatically placed in the Discard Pile, and then the game begins!
 
 ## Game Play
 
@@ -58,7 +58,7 @@ More information on basis states, quantum gates, and superpositions can be found
 
 # Options
 * **Free drawing:** If this is enabled, you can draw as many cards as you want. Otherwise, you can only draw cards if you do not have any playable cards in your hand.
-* **Replenish stack:** If this is enabled, the drawing pile gets replenished when it runs out by taking all cards from the discard pile (except the current top visible card) and reshuffling them. This can make the game last a very long time. If it is disabled and the drawing pile runs out, the game ends. The winner(s) is(are) the ones with the least cards left.
+* **Replenish stack:** If this is enabled, the draw pile gets replenished when it runs out by taking all cards from the discard pile (except the current top visible card) and reshuffling them. This can make the game last a very long time and the game will only end once someone manages to discard all their cards. If it is disabled and the draw pile runs out, the game ends. The winner(s) is(are) the ones with the least cards left.
 * **Pause music:** Pause/Unpause the music.
 * **Restart:** Start a new game.
 * **AI speed:** The speed of the AI. It is articially slowed down by adding time delays.
