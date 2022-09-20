@@ -56,6 +56,15 @@ The game continues until a player has one card left. When this player plays his/
 
 More information on basis states, quantum gates, and superpositions can be found in the next section.
 
+# Options
+* **Free drawing:** If this is enabled, you can draw as many cards as you want. Otherwise, you can only draw cards if you do not have any playable cards in your hand.
+* **Replenish stack:** If this is enabled, the drawing pile gets replenished when it runs out by taking all cards from the discard pile (except the current top visible card) and reshuffling them. This can make the game last a very long time. If it is disabled and the drawing pile runs out, the game ends. The winner(s) is(are) the ones with the least cards left.
+* **Pause music:** Pause/Unpause the music.
+* **Restart:** Start a new game.
+* **AI speed:** The speed of the AI. It is articially slowed down by adding time delays.
+* **Animation speed:** The speed at which cards move across the board.
+* **settings2.json:** You can edit this file to change the image/sound/music files used, the default options, as well as the size of the window, the size and position of objects, etc.
+
 # Information about the quantum computing involved in QNO
 
 This section contains enough quantum computing background to explain what is going on in QNO. There is way way WAY more quantum computing out there than just what occurs in this game. I hope if you enjoy QNO and this section, you seek out more knowledge in this field that I love so much!
