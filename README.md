@@ -1,3 +1,5 @@
+![QNO GUI screenshot](img/screenshot.png "QNO GUI screenshot")
+
 # Background
 
 This game is a graphical implementation of [QNO](https://github.com/Q-Philia/QNO/) by Q-Philia.
