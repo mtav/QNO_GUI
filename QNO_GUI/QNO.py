@@ -1,4 +1,5 @@
 #!/usr/bin/env python3
+# -*- coding: utf-8 -*-
 from qiskit import QuantumCircuit, execute, Aer, IBMQ
 
 import random
