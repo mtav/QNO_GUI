@@ -1,0 +1,14 @@
+Music:
+    Author: Brandon Morris (Submitted by HaelDB)
+    https://opengameart.org/content/loading-screen-loop
+    License: CC0: http://creativecommons.org/publicdomain/zero/1.0/
+
+Winning sound:
+    Author: Fupi
+    https://opengameart.org/content/win-jingle
+    License: CC0: http://creativecommons.org/publicdomain/zero/1.0/
+
+Losing sound: Game Over or Bad chest / Negtive Effect SFX
+    Author: Oiboo
+    https://opengameart.org/content/game-over-bad-chest-sfx
+    License: CC0: http://creativecommons.org/publicdomain/zero/1.0/

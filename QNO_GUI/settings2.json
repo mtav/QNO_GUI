@@ -1,0 +1,144 @@
+{
+	"window": {
+		"size": [1540, 960],
+		"title": "Quantum card game prototype",
+		"background_color": [25, 217, 255]
+	},
+	"card": {
+		"size": [130, 170],
+		"front_sprite_path": "img/cards/out/",
+		"back_sprite_file": "img/back-side.png",
+		"move_speed": 1000,
+		"draw_speed": 1000
+	},
+	"stockpile": {
+		"position": [586, 424],
+		"offset": [0, 0]
+	},
+	"discard": {
+		"position": [762, 424],
+		"offset": [0, 0]
+	},
+	"player_hand": {
+		"position": [408, 700],
+		"offset": [30, 0]
+	},
+	"opponent_hand": {
+		"name": {
+			"position_y": 8,
+			"text_size": 18,
+			"text_color": [0,0,255]
+		},
+		"position_y": 32,
+		"x_range": [25, 1488],
+		"offset": [2, 1]
+	},
+	"opponent_behavior": {
+		"min_delay_ms": 1100,
+		"max_delay_ms": 2500
+	},
+	"gui": {
+		"restart_button": [56, 832, 50, 25],
+		"test_button": [56, 732, 50, 25],
+		"speed_ai": {
+			"label": "AI speed:",
+			"offset_from_label": 180,
+			"position": [56, 882, 50, 25],
+			"text_size": 18,
+			"text_color": [0, 0, 0],
+			"min": 0,
+			"max": 2500
+		},
+		"speed_animation": {
+			"label": "Animation speed:",
+			"offset_from_label": 180,
+			"position": [56, 932, 50, 25],
+			"text_size": 18,
+			"text_color": [0, 0, 0],
+			"min": 100,
+			"max": 10000
+		},
+		"play_direction": {
+			"position": [56, 471],
+			"offset": [30, 0],
+			"size": [163, 161]
+		},
+		"option_music_paused": {
+			"button": [56, 782, 50, 25],
+			"button_text": "Pause music",
+			"initial_value": 0,
+			"label": {
+				"position": [206, 782],
+				"text_size": 18,
+				"text_color": [0, 0, 0]
+			}
+		},
+		"option_replenish_stack": {
+			"button": [56, 732, 50, 25],
+			"button_text": "Replenish stack",
+			"initial_value": 0,
+			"label": {
+				"position": [206, 732],
+				"text_size": 18,
+				"text_color": [0, 0, 0]
+			}
+		},
+		"option_free_drawing": {
+			"button": [56, 682, 50, 25],
+			"button_text": "Free drawing",
+			"initial_value": 1,
+			"label": {
+				"position": [206, 682],
+				"text_size": 18,
+				"text_color": [0, 0, 0]
+			}
+		},
+		"message": {
+			"position": [916, 300],
+			"text_size": 18,
+			"text_color": [0, 0, 0]
+		},
+		"message_game_over": {
+			"position": [200, 300],
+			"text_size": 18,
+			"text_color": [0, 0, 0]
+		},
+		"current_state": {
+			"position": [916, 500],
+			"text_size": 18,
+			"text_color": [0, 0, 0]
+		},
+		"player_prompt": {
+			"position": [420, 908],
+			"text_size": 18,
+			"text_color": [255,0,0]
+		},
+		"dialog": {
+			"title": {
+				"position": [926, 374],
+				"text_size": 18,
+				"text_color": [0, 0, 0]
+			},
+			"content": {
+				"position": [946, 396],
+				"button_size": [30, 25],
+				"button_margin": 5
+			}
+		},
+		"play_8_background": {
+			"period_ms": 700
+		},
+		"game_over_background": {
+			"color1": [255,150,150],
+			"color2": [150,255,150],
+			"period_ms": 2000
+		}
+	},
+	"crazy_8_spiral": {
+		"duration_ms": 2000,
+		"line_duration_ms": 200,
+		"spiral_radius": 50,
+		"revolutions": 2,
+		"is_clockwise": true
+	}
+}
