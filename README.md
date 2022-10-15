@@ -1,4 +1,4 @@
-![QNO GUI screenshot](img/screenshot.png "QNO GUI screenshot")
+[![QNO GUI video link](img/screenshot.png "QNO GUI video link")](https://www.youtube.com/watch?v=fe3j6HA_jKw)
 
 # Background
 
