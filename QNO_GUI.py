@@ -1716,10 +1716,19 @@ class Crazy8sController(controller.Controller):
 
 
 def main():
+    # get the main script's path
+    import os
+    abspath = os.path.abspath(__file__)
+    dname = os.path.dirname(abspath)
+    
+    # change into the script's directory (TODO: A better solution would be to load file relative to that path instead of using chdir.)
+    os.chdir(dname)
+
     # Seed random number generator.
     seed(int(round(time.time() * 1000)))
 
     json_path = os.path.join(os.getcwd(), 'settings2.json')
+    # json_path = os.path.join(dname, 'settings2.json')
     crazy8s_app = game_app.GameApp(json_path=json_path, controller_cls=Crazy8sController)
     crazy8s_app.execute()
 
